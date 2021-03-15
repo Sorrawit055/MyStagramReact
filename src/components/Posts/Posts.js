@@ -4,13 +4,13 @@ import {
   Container,Row,Center
 } from 'reactstrap';
 
-const Photo = (props) => {
+const Photo = (props) => { //ดึงข้อมูลโดย props หรือเปล่าไม่รู้ 
   let photo = null
 
   if (props.photo) {
     photo = (
 <Container>        
-    {props.photo.data.map((photo) => (
+    {props.photo.data.map((photo) => ( //เอามาวนลูป เป็นรูปเเละข้อมูลจากที่ดึงมาใน photo
       <center>
     <div>
         <Row>
@@ -50,8 +50,8 @@ const Photo = (props) => {
     )
   }
   
-  return (
-    <React.Fragment>
+  return (//คืออะไรไม่รู้ เเต่เข้าใจว่า เอาไอตัวข้างบนมา return มาดูอีกที
+    <React.Fragment> 
       {photo}
     </React.Fragment>
   )

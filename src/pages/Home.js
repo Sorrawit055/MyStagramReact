@@ -1,7 +1,7 @@
 import React from "react"
 import ViewHome from "../components/ViewHome";
 
-const Home = (props) => {
+const Home = () => {
     return(
 <>
     <ViewHome />

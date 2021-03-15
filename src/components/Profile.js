@@ -38,7 +38,8 @@ const Profile = ({id}) => {
       <Row>
        
         <h1 class="h1">PROFILE</h1>
-        <img src= {profile.urls.small} alt="" class="photo__file" />
+        <img class="photo__avatar" src={profile.user.profile_image.large}/> 
+        <img class="photo__avatar"  src= {profile.user.profile_image.large} alt="" class="photo__file" />
         <h3 class="h3">Name : {profile.user.first_name} {profile.user.last_name}</h3>
         <h3 class="h3">Like : {profile.likes}</h3>
         <h3 class="h3">City/Country : {profile.location.city},{profile.location.country}</h3>

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import InformationPhoto from "./pages/InformationPhoto";
 
-const App = () => {
+const App = () => {//:id ระบุ id
   return (
     <Router>
       <Switch>
